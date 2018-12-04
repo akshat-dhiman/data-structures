@@ -9,8 +9,8 @@ Then, you need to download some *packages* inside atom to make it run smoothly f
 - script
 - gpp-compiler
 - atom-python-run
-- minimap<br />
-You will need to download the [TDM-GCC](https://sourceforge.net/projects/tdm-gcc/) Compiler to run your programs directly through the editor.
+- minimap<br /><br />
+You will need to download the [TDM-GCC](https://sourceforge.net/projects/tdm-gcc/) Compiler to run your programs directly through the Terminal.
 ### Linked List
 Linked lists are collection of *nodes* linked to each other through pointers.<br />
 Operations covered are:<br />
@@ -79,16 +79,18 @@ A binary tree is threaded by making all right child pointers that would normally
 and all left child pointers that would normally be null point to the inorder predecessor of the node.<br />
 Two different functions are used to reach to the appropriate location for left & right pointers of leaf nodes. The result is printed using inorder traversal.<br />A two way threaded binary tree is fully implemented. 
 ### AVL Trees
-These are very interesting type of trees. These are *self-balancing* binary search trees in which the difference between left & right subtrees should not be more than one. A **balancing factor** is assosiated with each node which indicates it's avlness.<br />
-> Balance Factor(bf) = height of left subtree - height of right subtree
-It's allowed values are -1,0 and 1. After insertion in an AVL tree if *bf* is violated then avlness of tree is again set.<br />
+These are very interesting type of trees. These are *self-balancing* binary search trees in which the difference between left & right subtrees should not be more than one. A **balancing factor** is assosiated with each node which indicates it's avlness.<br /><br />
+  > Balance Factor(bf) = height of left subtree - height of right subtree
+  
+  
+  It's allowed values are -1,0 and 1. After insertion in an AVL tree if *bf* is violated then avlness of tree is again set.<br />
 Operations covered are:
 - Creation of AVL tree
 - Displaying of nodes
 - Balance factor calculation
 - Searching for a node
-- Insertion using ***rotation***
-I love this tree.:blue_heart: just kidding:stuck_out_tongue_closed_eyes:
+- Insertion using ***rotation***<br />
+I love this tree:blue_heart: just kidding:stuck_out_tongue_closed_eyes:
 ### Hash Table
 Hash table is a very important data structure. Everyone uses hash tables because if you were to hash all the items and store them in a hash table, checking for virtually any element would happen quickly and at the same speed no matter how long is your dataset. Hash tables uses a **hash function** to map the *keys* to the corresponding values. Keys has to be unique.<br />
 There are three ways to get a hash function:
@@ -97,8 +99,9 @@ There are three ways to get a hash function:
 3. Universal method(best method)<br />
 Insert, Display & Search operations has been performed after making a hash table.
 ### Heaps
-A heap is self-balancing binary tree in which all the nodes are arranged in a particular order. Heaps are visualized as an array of keys and values.
-> Heaps are used to implement Priority Queues
+A heap is self-balancing binary tree in which all the nodes are arranged in a particular order. Heaps are visualized as an array of keys and values.<br />
+  > Heaps are used to implement Priority Queues
+  
 There are two types of heaps:
 1. Max Heap
 2. Min Heap
