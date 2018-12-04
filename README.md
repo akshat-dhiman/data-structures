@@ -96,7 +96,7 @@ Hash table is a very important data structure. Everyone uses hash tables because
 There are three ways to get a hash function:
 1. Division method(The one I used)
 2. Multiplication method
-3. Universal method(best method)<br />
+3. Universal method(best method)<br /><br />
 Insert, Display & Search operations has been performed after making a hash table.
 ### Heaps
 A heap is self-balancing binary tree in which all the nodes are arranged in a particular order. Heaps are visualized as an array of keys and values.<br />
@@ -104,7 +104,7 @@ A heap is self-balancing binary tree in which all the nodes are arranged in a pa
   
 There are two types of heaps:
 1. Max Heap
-2. Min Heap
+2. Min Heap<br /><br />
 I have only performed Insertion and Deletion operations on max heaps. Also, I have performed something called as max-heapify to maintain the principle of max heaps after insertion or deletion of an element.
 <br />These are the data structures covered in the code.<br />
 > Pardon the length:neutral_face:
