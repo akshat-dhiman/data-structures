@@ -77,5 +77,31 @@ Operations covered are:
 ### Threaded Binary Tree
 A binary tree is threaded by making all right child pointers that would normally be null point to the inorder successor of the node
 and all left child pointers that would normally be null point to the inorder predecessor of the node.<br />
-A two way threaded binary tree is fully implemented
-
+Two different functions are used to reach to the appropriate location for left & right pointers of leaf nodes. The result is printed using inorder traversal.<br />A two way threaded binary tree is fully implemented. 
+### AVL Trees
+These are very interesting type of trees. These are *self-balancing* binary search trees in which the difference between left & right subtrees should not be more than one. A **balancing factor** is assosiated with each node which indicates it's avlness.<br />
+> Balance Factor(bf) = height of left subtree - height of right subtree
+It's allowed values are -1,0 and 1. After insertion in an AVL tree if *bf* is violated then avlness of tree is again set.<br />
+Operations covered are:
+- Creation of AVL tree
+- Displaying of nodes
+- Balance factor calculation
+- Searching for a node
+- Insertion using ***rotation***
+I love this tree.:blue_heart: just kidding:stuck_out_tongue_closed_eyes:
+### Hash Table
+Hash table is a very important data structure. Everyone uses hash tables because if you were to hash all the items and store them in a hash table, checking for virtually any element would happen quickly and at the same speed no matter how long is your dataset. Hash tables uses a **hash function** to map the *keys* to the corresponding values. Keys has to be unique.<br />
+There are three ways to get a hash function:
+1. Division method(The one I used)
+2. Multiplication method
+3. Universal method(best method)<br />
+Insert, Display & Search operations has been performed after making a hash table.
+### Heaps
+A heap is self-balancing binary tree in which all the nodes are arranged in a particular order. Heaps are visualized as an array of keys and values.
+> Heaps are used to implement Priority Queues
+There are two types of heaps:
+1. Max Heap
+2. Min Heap
+I have only performed Insertion and Deletion operations on max heaps. Also, I have performed something called as max-heapify to maintain the principle of max heaps after insertion or deletion of an element.
+<br />These are the data structures covered in the code.<br />
+> Pardon the length:neutral_face:
