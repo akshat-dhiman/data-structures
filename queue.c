@@ -1,62 +1,54 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define max 20
-int q[max],rear=-1,front=-1;
-void insert()
-{  int n;
-  printf("\nEnter -1 to stop.\nMax limit is 20 elements.");
-  printf("\nEnter numbers in queue: ");
-  scanf("%d",&n);
-  if(front==-1&&rear==-1)
-    front=0;
-  while(n!=-1)
-  {
-    if(rear==max-1)
-    {
-      printf("\nOverflow");
-      exit(1);
-    }
-    else
-    {
-        rear+=1;
-      q[rear]=n;
-    }
-    scanf("%d",&n);
+int queue[max], front = -1, rear = -1;
+
+void insert(int n){
+  if (rear == max - 1)
+    printf("\nQueue Overflow");
+  else if (front == -1 && rear == -1){  // this step is done to bring front n rear to 1st position.
+    front = rear = 0;  //later front won't be changed only rear will move that's why this step done separately cause of front.
+    queue[rear] = n;
+  }
+  else{
+    queue[++rear] = n;
   }
 }
-void display()
-{
-  printf("\nThe elelments in the queue are: ");
-  for(int i=front;i<rear+1;i++)
-    printf("\t%d",q[i]);
-}
-int del()
-{  int val;
-  val=front;
-  if(front==-1||front>rear)
-  {
-    printf("\nUnderflow");
-    exit(1);
+
+void display(){
+  if (front == -1 && rear == -1)
+    printf("\nQueue is empty.");
+  else{
+    for(int i=front; i<=rear; i++)
+      printf("\t%d", queue[i]);
   }
-  else
-{
-  front+=1;
-  return q[val];
 }
+
+int delete(){
+  if(front == -1 || rear<front)
+    printf("\nQueue Underflow");
+  else{
+    return queue[front++];
+  }
 }
-int main()
-{
+
+int main(){
   int n;
-  insert();
-  display();
-  printf("\nHow many elelments you want to delete? : ");
-  scanf("%d",&n);
-  printf(front);
-  while(n>0)
-  {
-    del();
-    n--;
+  printf("Enter atmost 20 elements in the queue.\n");
+  printf("Enter -1 to stop.\n");  // it's better than taking fixed number of inputs
+  scanf("%d", &n);
+  while(n != -1){
+    insert(n);  // call insert before scanning next item. This way unncessary -1 won't be added
+    scanf("%d", &n);
   }
   display();
-  return 0;
+  printf("\nHow many elements u wanna delete...");
+  int d;
+  scanf("%d", &d);
+  printf("\nElements are always deleted from front in a queue.");
+  while(d>0){
+    delete();
+    d--;
+  }
+  display();
 }
