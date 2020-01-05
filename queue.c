@@ -51,4 +51,5 @@ int main(){
     d--;
   }
   display();
+  retrun 0;
 }
