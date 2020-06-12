@@ -33,7 +33,7 @@ struct node *tree_insert(int n){
 
 int level_counter = 0;
 struct node *search(struct node *tree, int val){
-  if (tree == NULL)
+  if (tree == NULL || tree->data == val)
     return tree;
   else if(val < tree->data)
     search(tree->left, val);
