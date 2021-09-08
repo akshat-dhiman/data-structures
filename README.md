@@ -90,7 +90,6 @@ Operations covered are:
 - Balance factor calculation
 - Searching for a node
 - Insertion using ***rotation***<br />
-I love this tree:blue_heart: just kidding:stuck_out_tongue_closed_eyes:
 ### Hash Table
 Hash table is a very important data structure. Everyone uses hash tables because if you were to hash all the items and store them in a hash table, checking for virtually any element would happen quickly and at the same speed no matter how long is your dataset. Hash tables uses a **hash function** to map the *keys* to the corresponding values. Keys has to be unique.<br />
 There are three ways to get a hash function:
