@@ -106,4 +106,4 @@ There are two types of heaps:
 2. Min Heap<br /><br />
 I have only performed Insertion and Deletion operations on max heaps. Also, I have performed something called as max-heapify to maintain the principle of max heaps after insertion or deletion of an element.
 <br />These are the data structures covered in the code.<br />
-> Pardon the length:neutral_face:
+
