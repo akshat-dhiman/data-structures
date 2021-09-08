@@ -39,7 +39,6 @@ Operations covered are:
 - Pop
 - Peek
 #### I have implemented stacks using both arrays and linked lists.:+1:<br />
-> Code for Paranthesis-Checker & Infix to Postfix expression is also provided.:sunglasses:
 ### Queue
 These are the data structures in which data is put one after the another.It follows the principle of **FIFO**(First In First Out).<br />
 Operations covered are:
